@@ -1,4 +1,11 @@
-let frase = prompt("ingrese su frase")
-document.write(frase)
+let resultado = ""
 
-while(frase)
+do{
+    let cadena = prompt("ingrese su texto")
+if(resultado==""){
+resultado=resultado+cadena
+}else{
+    resultado=resultado+"-"+cadena
+}}while (confirm("¿desea seguir?"))
+    document.write(resultado)
+                           
