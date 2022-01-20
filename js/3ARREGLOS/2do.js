@@ -1,8 +1,9 @@
  
- let ciudades=[]
- let resultado=""
-//  Bucle for
-
+ let ciudadesIngresadas=[]
+for (let i = 0; i < ciudades; i++) {
+    ciudadesIngresadas=prompt("ingrese su ciudad")
+    document,write(`<br>${ciudadesIngresadas}`)
+}
 let ciudadesIngresadas = prompt("ingrese ciudades")
 
 
