@@ -1,17 +1,19 @@
-let frase = prompt("Ingrese una frase");
 
-console.log(frase);
-console.log(frase.length);
-console.log(frase.charAt(1));
-console.log(frase.toUpperCase());
-console.log(frase.toLowerCase());
+let cadena = prompt("Ingrese una cadena de texto:");
+cadena = cadena.toUpperCase(); //Devuelve el string en mayúsculas.
+let caracter;
+let contador = 0;
 
-
-frase= frase.toLowerCase();
-for(let i=0; i< frase.length;i++){
-    if(frase.charAt(i)== "a" || frase.charAt(i)== "e" || frase.charAt(i)== "i" || frase.charAt(i)== "o" || frase.charAt(i)== "u" ){
-        document.write(frase.charAt(i));
-    }
+for (let i = 0; i < cadena.length; i++) {
+  caracter = cadena.charAt(i); //recupera el caracter i del string.
+  if (
+    caracter == "A" ||
+    caracter == "E" ||
+    caracter == "I" ||
+    caracter == "O" ||
+    caracter == "U"
+  ) {
+    contador++;
+  }
 }
-
-// INCOMPLETO
+document.write(`Número de Vocales: ${contador}`);

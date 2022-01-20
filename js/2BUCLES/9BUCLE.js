@@ -1,7 +1,20 @@
-let i,repeticion
-
-document.write(1)
-for (i=1; i<=500; i++) {
-    document.write("<br>"+i)
+let j = 500;
+let rep = 0;
+//bucle desde 1 hasta j=500
+for (let i = 1; i <= j; i++) {
+    document.write(i);
+    //si el resto de dividir i/4 es igual a 0
+    if (i % 4 == 0) {
+        document.write(" (Multiplo de 4)");
+    }
+    //si el resto de dividir i/9 es igual a 0
+    if (i % 9 == 0) {
+        document.write(" (Multiplo de 9)");
+    }
+    //agrego un salto de linea
+    document.write("<br>");
+    //si es multiplo de 5 imprimir linea
+    if (i % 5 == 0) {
+        document.write("<hr>");
+    }
 }
-// INCOMPLETO
